@@ -1,0 +1,18 @@
+type JournalEntry @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  journalEntryText: String
+  moodStatus: String
+}
+
+type WaterTrackerEntry @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  waterNum: String
+}
+
+type ToDoList @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  toDoListName: String
+  toDoEntryText: String
+  isDone: Boolean
+}
+ 
